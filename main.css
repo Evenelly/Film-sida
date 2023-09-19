@@ -1,27 +1,38 @@
 body{
-    background-color: beige;
-    margin: 0;
+    margin: 0;                  /*För att ta bort kanterna på hemsidna*/
+    background-color: beige;  /*För att få backgrunds färgen till beige*/
 }
 
-h1{
-    text-align: center;
-    margin: 0;
-    padding: 15px;
-    background-color:darkcyan;
-    color: white;
+.header{
+    text-align: center;             /*För att få "Film rekomendationer" i mitten av headern*/
+    margin: 0;                      /*För att få bort top/bottom margin på texten (gör så att paddingen/färgen nuddar taket av hemsidan*/
+    padding: 15px;                  /*För att få en slags header med pixlarna 15*/
+    background-color:#add8e6;     /*För att få paddingen till en annan färg*/
 }
 
-img{
-    width: 600px;
+
+
+
+div{
+    float: left;            /*För att få alla posters/namnen komma bredvid varandra*/
+    width: 31%;             /*För att få så att diven bara tar upp 31% av hemsidan, så att alla posters får plats bredvid varandra*/
+    padding: 14px;          /*För att få avstånd mellan postersarna*/
 }
 
-h2{
-    margin-left: 20px;
+div p{
+    text-align: center;         /*För att få ul texten i mitten av postersarna */
+    font-size: x-large;         /*För att göra p texten större*/
+    margin-top: 5px;            /*För att få avståndet mellan posterarna och namnen 5px*/
+    padding: 5px;               /*För att göra bordern större*/
+    color: black;             /*För att göra texten svart*/
+    border: solid black;      /*För att göra bordern solid och svart/skapa border*/
+    background-color: white;  /*För att göra backgrunden på bordern till vit*/
 }
 
-ul{
-    background-color:lightcyan;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid teal;
+.posters{
+    width: 100%;        /*För att få postersarna till 100% av diven*/
+    height: 600px;      /*För att få postersarna till samma height*/
 }
+
+
+

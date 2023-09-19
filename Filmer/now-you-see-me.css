@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    background-color: beige;
+}
+
+.header{
+    margin: 0px;
+    padding: 15px;                  /*För att få en slags header med pixlarna 15*/
+    background-color:#add8e6;     /*För att få paddingen till en annan färg*/
+}
+
+.header h1{
+    text-align: center;             /*För att få "Film rekomendationer" i mitten av headern*/
+    margin: 0px;
+    margin-right: 49px;  
+}
+
+.header h2{
+    float: left;
+    font-size:medium;
+    color:black;
+}
+
+img{
+    margin: 9px;
+    width: 50%
+}
+
+.maintext{
+    float: right;
+    width: 45%;
+    margin: 9px;
+    background-color: white;
+    padding: 10px;
+    border: solid;
+}
+
+.maintext h2{
+    margin: 0%;
+    text-align: center;
+}
