@@ -20,18 +20,23 @@ div{
 }
 
 div p{
-    text-align: center;         /*För att få ul texten i mitten av postersarna */
-    font-size: x-large;         /*För att göra p texten större*/
-    margin-top: 5px;            /*För att få avståndet mellan posterarna och namnen 5px*/
-    padding: 5px;               /*För att göra bordern större*/
-    color: black;             /*För att göra texten svart*/
-    border: solid black;      /*För att göra bordern solid och svart/skapa border*/
-    background-color: white;  /*För att göra backgrunden på bordern till vit*/
+    text-align: center;             /*För att få p texten i mitten av "knappen"*/
+    font-size: x-large;             /*För att göra p texten större*/
+    margin: 0px;                    /*För att få bort all margin runt om texten (och så att man inte kan scrolla eftersom att det är onödigt i detta fall*/
+    margin-left: 46.5px;              /*För att få knappen i ungefär mitten*/
+    margin-top: 5px;                /*För att få avståndet mellan posterarna och namnen*/
+    padding: 5px;                   /*För att göra bordern större*/
+    color: black;                 /*För att göra texten svart*/
+    border: solid black;          /*För att göra bordern solid och svart/skapa border*/
+    background-color: white;      /*För att göra bakgrunden på bordern till vit*/
+    width: 290px;                   /*För att få "knappen" till 290px*/
+    box-shadow: 5px 5px #564c4d;  /*För att få en shadow bakom "knappen"*/
 }
 
 .posters{
-    width: 100%;        /*För att få postersarna till 100% av diven*/
-    height: 600px;      /*För att få postersarna till samma height*/
+    margin-left: 50px;  /*För att få bilderna i center*/
+    width: 75%;         /*För att få postersarna till 75% av diven*/
+    height: 430px;      /*För att få postersarna till samma height*/
 }
 
 

@@ -1,10 +1,11 @@
+/*Alla mina kommentarer som jag har lagt till gäller för det mesta på det andra filmsidorna också*/
+
 body{
-    margin: 0;
-    background-color: beige;
+    margin: 0;                      /*För att ta bort kanterna på hemsidan*/
+    background-color: beige;      /*För att göra backgrunden av hemsidan till färgen beige*/
 }   
 
 .header{
-    margin: 0px;
     padding: 15px;                  /*För att få en slags header med pixlarna 15*/
     background-color:#add8e6;     /*För att få paddingen till en annan färg*/
 }
@@ -12,7 +13,7 @@ body{
 .header h1{
     text-align: center;         /*För att få "Film rekommendationer" i mitten av headern*/
     margin: 0px;                /*För att få all margin runt "Filme rekommendationer" till 0*/
-    margin-right: 49px;         /*För att öka den högra sidans (detta är för att få "Film rekommendationer" i mitten, alltså h2 
+    margin-right: 33px;         /*För att öka den högra sidans (detta är för att få "Film rekommendationer" i mitten, alltså h2
                                 förstör text-align på grund av att h2 tar upp plats)*/
 }
 
@@ -26,18 +27,26 @@ img{
     margin: 9px;        /*För att främst öka avståndet mellan headern och bilden*/
     float: left;        /*För att få bilden till vänster*/
     width: 50%;         /*För att få bilden til 50% av sidan så att maintext kan få plats*/
+    border-radius: 1%;  /*För att göra hörnen runda*/
 }
 
 .maintext{
-    float: right;   
-    width: 45%;
-    margin: 9px;
-    background-color: white;
-    padding: 10px;
-    border: solid;
+    float: right;                   /*För att få texten till höger om bilden*/
+    width: 45%;                     /*För att få textens width till 45% av hemsidan*/
+    margin: 9px;                    /*För att öka avståndet mellan headern och kantern av hemsidan*/
+    background-color: white;      /*För att få backgrundens text till vit*/
+    padding: 10px;                  /*För att öka avståndet mellan boardern och texten*/
+    border: solid;                  /*För att få en boarder på paddingen*/
+    border-radius: 1%;              /*För att göra hörnen runda*/
 }
 
 .maintext h2{
-    margin: 0%;
-    text-align: center;
+    margin: 0%;             /*För att minska avståndet mellan titeln och allt annat*/
+    text-align: center;     /*För att få titeln i mitten av diven*/
+}
+
+.maintext ul{
+    margin-top: 40px;       /*För att öka avståndet mellan ul texterna och beskrivningen*/
+    margin-bottom: 10px;    /*För att öka avståndet mellan ul texterna*/
+    padding: 0px;           /*För att få texten till kanten*/
 }

@@ -5,14 +5,14 @@ body{
 
 .header{
     margin: 0px;
-    padding: 15px;                  /*För att få en slags header med pixlarna 15*/
-    background-color:#add8e6;     /*För att få paddingen till en annan färg*/
+    padding: 15px;
+    background-color:#add8e6;
 }
 
 .header h1{
-    text-align: center;             /*För att få "Film rekomendationer" i mitten av headern*/
+    text-align: center;
     margin: 0px;
-    margin-right: 49px;  
+    margin-right: 33px;  
 }
 
 .header h2{
@@ -23,7 +23,9 @@ body{
 
 img{
     margin: 9px;
-    width: 50%
+    float: left;
+    width: 50%;
+    border-radius: 1%;
 }
 
 .maintext{
@@ -33,9 +35,16 @@ img{
     background-color: white;
     padding: 10px;
     border: solid;
+    border-radius: 1%;
 }
 
 .maintext h2{
     margin: 0%;
     text-align: center;
+}
+
+.maintext ul{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 0px;
 }
