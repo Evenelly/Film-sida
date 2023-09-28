@@ -4,40 +4,47 @@ body{
 }
 
 .header{
-    text-align: center;             /*För att få "Film rekomendationer" i mitten av headern*/
-    margin: 0;                      /*För att få bort top/bottom margin på texten (gör så att paddingen/färgen nuddar taket av hemsidan*/
-    padding: 15px;                  /*För att få en slags header med pixlarna 15*/
+    text-align: center;             /*För att sätta texten i mitten av headern*/
     background-color:#add8e6;     /*För att få paddingen till en annan färg*/
+    padding: 15px;                  /*För att göra headern till 15px*/
+    margin: 0px;                    /*För att ta bort all margin runt headern*/
 }
 
-
-
-
-div{
-    float: left;            /*För att få alla posters/namnen komma bredvid varandra*/
-    width: 31%;             /*För att få så att diven bara tar upp 31% av hemsidan, så att alla posters får plats bredvid varandra*/
-    padding: 14px;          /*För att få avstånd mellan postersarna*/
+.grid-container{
+    display: grid;                          /*För att skapa en grid*/
+    grid-template-columns: auto auto auto;  /*För att göra tre kolumner*/
+    margin: 20px;                           /*För att få en margin på 20px runt hela grid-containern*/
+    gap: 25px;                              /*För att få ett avstånd mellan items till 25px*/
 }
 
-div p{
+.item{
+    display: grid;              /*För att visa att klassen "item" är en del av griden*/
+    justify-content: center;    /*För att få allt i items i mitten av kolumnerna*/
+    transition: transform .2s;  /*För att skapa en animation som tar 2s*/
+}
+
+.item:hover{
+    transform:scale(97%)    /*För att få en animation när man hoverar item, denna animationen är en skala förändring*/
+}
+
+div div p{
+    margin: 5px;                    /*För att skapa ett avstånd mellan posters och "knappen"*/
     text-align: center;             /*För att få p texten i mitten av "knappen"*/
     font-size: x-large;             /*För att göra p texten större*/
-    margin: 0px;                    /*För att få bort all margin runt om texten (och så att man inte kan scrolla eftersom att det är onödigt i detta fall*/
-    margin-left: 46.5px;              /*För att få knappen i ungefär mitten*/
-    margin-top: 5px;                /*För att få avståndet mellan posterarna och namnen*/
     padding: 5px;                   /*För att göra bordern större*/
     color: black;                 /*För att göra texten svart*/
+    background-color: white;      /*För att göra bakgrunden på "knappen" till vit*/
     border: solid black;          /*För att göra bordern solid och svart/skapa border*/
-    background-color: white;      /*För att göra bakgrunden på bordern till vit*/
-    width: 290px;                   /*För att få "knappen" till 290px*/
     box-shadow: 5px 5px #564c4d;  /*För att få en shadow bakom "knappen"*/
 }
 
 .posters{
-    margin-left: 50px;  /*För att få bilderna i center*/
-    width: 75%;         /*För att få postersarna till 75% av diven*/
-    height: 430px;      /*För att få postersarna till samma height*/
+    height: 425px;              /*För att få en height på posterna som är 425px (mest så att alla har samma height)*/
+    border-radius: 1%;          /*För att få runda hörn*/
+    transition: transform .2s;  /*För att skapa en ytterligare animation*/
 }
 
-
-
+.posters:hover{
+    transform: scale(95%)   /*För att transformera postersarna till 95% av orginalstorleken när den hoverars, 
+                            detta är alltså en ytterligare nedskalning från item:hovern (jag tyckte det såg bättre ut)*/
+}

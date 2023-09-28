@@ -6,38 +6,50 @@ body{
 }   
 
 .header{
-    padding: 15px;                  /*För att få en slags header med pixlarna 15*/
-    background-color:#add8e6;     /*För att få paddingen till en annan färg*/
+    display: grid;                    /*För att skapa en grid*/
+    grid-template-columns: 40px auto; /*För att få två kolumner*/
+    background-color:#add8e6;       /*För att få paddingen till en annan färg*/
+    padding: 15px;                    /*För att få samma storlek på headern som jag har i main.css*/
 }
 
 .header h1{
-    text-align: center;         /*För att få "Film rekommendationer" i mitten av headern*/
-    margin: 0px;                /*För att få all margin runt "Filme rekommendationer" till 0*/
-    margin-right: 33px;         /*För att öka den högra sidans (detta är för att få "Film rekommendationer" i mitten, alltså h2
-                                förstör text-align på grund av att h2 tar upp plats)*/
+    text-align: center;     /*För att få "Film rekommendationer" i mitten av headern*/
+    margin: 0px;            /*För att få bort all margin runt "Film rekommendationer*/
+    margin-right:40px;      /*För att få samma width som "hem" har på den andra sidan, detta är alltså så att "Film rekommendationer" kommer i mitten*/
 }
 
 .header h2{
-    float: left;        /*För att få "hem" till vänsta sidan av headern*/
     font-size:medium;   /*För att minska storleken på "hem"*/
     color:black;      /*För att vå svart färg på texten*/
+    margin: 0px;        /*För att få bort all margin runt "hem"*/
+    margin-top: 10px;   /*För att sänka "hem"*/
+}
+
+.grid-container{
+    display: grid;                          /*För att skapa en grid*/
+    grid-template-columns: auto auto;       /*För att skapa två olika kolumner inom grid-containern*/
+    margin: 20px;                           /*För att få ett avstånd runt hela grid-containter*/
+    gap: 5px;                               /*För att få ett avstånd mellan items*/
+}
+
+.item{
+    display: grid;    /*För att visa att delarna i classen "item" är en del av griden*/
+    height:100%;      /*För att göra alla items till 100% av griden*/
 }
 
 img{
-    margin: 9px;        /*För att främst öka avståndet mellan headern och bilden*/
-    float: left;        /*För att få bilden till vänster*/
-    width: 50%;         /*För att få bilden til 50% av sidan så att maintext kan få plats*/
+    width: 700px;       /*För att få bilden til 700px av sidan så att maintext kan få plats*/
     border-radius: 1%;  /*För att göra hörnen runda*/
 }
 
+
 .maintext{
-    float: right;                   /*För att få texten till höger om bilden*/
-    width: 45%;                     /*För att få textens width till 45% av hemsidan*/
-    margin: 9px;                    /*För att öka avståndet mellan headern och kantern av hemsidan*/
-    background-color: white;      /*För att få backgrundens text till vit*/
-    padding: 10px;                  /*För att öka avståndet mellan boardern och texten*/
-    border: solid;                  /*För att få en boarder på paddingen*/
+    width: 500px;                   /*För att få textens bakgrunden width till 500px av hemsidan*/
+    background-color: white;      /*För att få bakgrundens text till vit*/
+    padding: 10px;                  /*För att öka avståndet mellan bakgrunden och texten*/
+    border: solid;                  /*För att få en boarder på bakgrunden*/
     border-radius: 1%;              /*För att göra hörnen runda*/
+    position: relative;             /*För att göra son diven relativ till föräldrar diven (vilket har klassen "maintext")*/
 }
 
 .maintext h2{
@@ -46,7 +58,8 @@ img{
 }
 
 .maintext ul{
-    margin-top: 40px;       /*För att öka avståndet mellan ul texterna och beskrivningen*/
-    margin-bottom: 10px;    /*För att öka avståndet mellan ul texterna*/
+    margin-bottom: 10px;    /*För att öka avståndet mellan borderna av bakgrunden och ul textern*/
     padding: 0px;           /*För att få texten till kanten*/
+    position: absolute;     /*För att ta bort ul texten från det normala sidoföldet*/
+    bottom: 0;              /*För att sätta fast ul texten längst ner på föräldrar diven*/
 }
