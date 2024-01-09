@@ -10,16 +10,13 @@ body{
     margin: 0px;                    /*För att ta bort all margin runt headern*/
 }
 
-.grid-container{
-    display: grid;                          /*För att skapa en grid*/
-    grid-template-columns: auto auto auto;  /*För att göra tre kolumner*/
-    margin: 20px;                           /*För att få en margin på 20px runt hela grid-containern*/
-    gap: 25px;                              /*För att få ett avstånd mellan items till 25px*/
+.container{
+    display: flex; 
+    justify-content: space-around;
+    margin: 20px;
 }
 
 .item{
-    display: grid;              /*För att visa att klassen "item" är en del av griden*/
-    justify-content: center;    /*För att få allt i items i mitten av kolumnerna*/
     transition: transform .2s;  /*För att skapa en animation som tar 2s*/
 }
 
@@ -35,7 +32,6 @@ div div p{
     color: black;                 /*För att göra texten svart*/
     background-color: white;      /*För att göra bakgrunden på "knappen" till vit*/
     border: solid black;          /*För att göra bordern solid och svart/skapa border*/
-    box-shadow: 5px 5px #564c4d;  /*För att få en shadow bakom "knappen"*/
 }
 
 .posters{

@@ -6,8 +6,9 @@ body{
 }   
 
 .header{
-    display: grid;                    /*För att skapa en grid*/
-    grid-template-columns: 40px auto; /*För att få två kolumner*/
+    display: flex;                    /*För att skapa en grid*/
+    justify-content: space-between;   /*För att få elementet space between mellan mina texter*/
+    align-items: center;              /*För att få texterna i mitten av headern*/
     background-color:#add8e6;       /*För att få paddingen till en annan färg*/
     padding: 15px;                    /*För att få samma storlek på headern som jag har i main.css*/
 }
@@ -15,14 +16,14 @@ body{
 .header h1{
     text-align: center;     /*För att få "Film rekommendationer" i mitten av headern*/
     margin: 0px;            /*För att få bort all margin runt "Film rekommendationer*/
-    margin-right:40px;      /*För att få samma width som "hem" har på den andra sidan, detta är alltså så att "Film rekommendationer" kommer i mitten*/
+    margin-right: 33.88px;
+    flex-grow: 1;           
 }
 
 .header h2{
     font-size:medium;   /*För att minska storleken på "hem"*/
     color:black;      /*För att vå svart färg på texten*/
     margin: 0px;        /*För att få bort all margin runt "hem"*/
-    margin-top: 10px;   /*För att sänka "hem"*/
 }
 
 .grid-container{
@@ -44,12 +45,12 @@ img{
 
 
 .maintext{
-    width: 500px;                   /*För att få textens bakgrunden width till 500px av hemsidan*/
     background-color: white;      /*För att få bakgrundens text till vit*/
     padding: 10px;                  /*För att öka avståndet mellan bakgrunden och texten*/
     border: solid;                  /*För att få en boarder på bakgrunden*/
     border-radius: 1%;              /*För att göra hörnen runda*/
     position: relative;             /*För att göra son diven relativ till föräldrar diven (vilket har klassen "maintext")*/
+    padding-bottom: 10vh;
 }
 
 .maintext h2{

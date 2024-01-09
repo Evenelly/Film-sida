@@ -4,8 +4,9 @@ body{
 }
 
 .header{
-    display: grid;
-    grid-template-columns: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:#add8e6;
     padding: 15px;
 }
@@ -13,17 +14,17 @@ body{
 .header h1{
     text-align: center;
     margin: 0px;
-    margin-right:40px;
+    margin-right:33.88px;
+    flex-grow: 1;
 }
 
 .header h2{
     font-size:medium;  
     color:black;
     margin: 0px;
-    margin-top: 10px;
 }
 
-.grid-container{
+.container{
     display: grid;
     grid-template-columns: auto auto;
     margin: 20px;
@@ -42,12 +43,12 @@ img{
 
 
 .maintext{
-    width: 500px;
     background-color: white;
     padding: 10px;
     border: solid; 
     border-radius: 1%; 
     position: relative;
+    padding-bottom: 10vh;
 }
 
 .maintext h2{
